@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="asset/logoTimbanganKecil.png" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#"><span>hier.</span></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section class="container-left">
+        <header>
+          <h2>Kalkulator BMI</h2>
+        </header>
+        <article class="deskripsi">
+          <h5>
+            <p>
+              Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+              berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+            </p>
+          </h5>
+        </article>
+        <article class="formInput">
+          <form action="">
+            <h4>Jenis Kelamin</h4>
+            <input type="radio" name="gender" id="pria" />
+            <label for="pria">Pria</label>
+            <input type="radio" name="gender" id="wanita" />
+            <label for="wanita">Wanita</label>
+            <br />
+            <h4>Berat Badan (kg)</h4>
+            <input type="number" name="berat" id="berat" />
+            <br /><br />
+            <h4>Usia (tahun)</h4>
+            <input type="number" name="usia" id="usia" />
+            <h4>Tinggi badan (cm)</h4>
+            <input type="number" name="tinggi" id="tinggi" />
+            <br /> <br>
+            <button type="submit" onclick="hitungBMI()">Hitung BMI</button>
+            <button type="reset">Reset</button>
+          </form>
+        </article>
+        <br>
+        <article class="penjelasan">
+          <h3>Keunggulan fitur</h3>
+          <h5>1. Menghitung berat badan</h5>
+          <h5>2. Menentukan kategori berat badan ideal atau tidak</h5>
+          <h5>3. Mempersiapkan program penurunan berat badan</h5>
+          <br>
+          <p>
+            <h5>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</h5>
+          </p>
+          <br>
+          <p>
+            <h5>
+                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai
+                umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi
+                dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+            </h5>
+          </p>
+        </article>
+      </section>
+      <section class="container-right">
+        <header>
+            <h2>Hasil</h2>
+          </header>
+          <article class="hasil">
+            <h3 id="bmiKategori">Masukkan Data!</h3>
+            <span id="bmiSkor" class="skor">
+                -
+            </span>
+            <h4 id="bmiAnda">Anda belum menginputkan data.</h4>
+            <button>Download Hasil BMI</button>
+          </article>
+          <br>
+          <article class="penjelasan">
+            <h5 id="bmiAntara">Masukkan data terlebih dahulu.</h5>
+            <br>
+            <h5 id="bmiPenjelasan"></h5>
+            <br>
+            <h5>
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
+                seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+                berat badan Anda.
+            </h5>            
+          </article>
+          <br>
+          <article class="penyakit">
+            <h3>
+                <p>Beberapa penyakit yang berasal dari kegemukan</p>
+            </h3>
+            <h5>
+                <p>Diabetes</p>
+                <p>Hipertensi</p>
+                <p>Sakit Jantung</p>
+                <p>Osteoarthritis</p>
+            </h5>
+            <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button>Registrasi Online Ahli Gizi</button>
+          </article>
+      </section>
+    </main>
+    <footer>
+            Created by <span class="username">
+                <a href="https://www.instagram.com/hieropn">@hieropn</a>
+            </span>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
